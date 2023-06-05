@@ -1,9 +1,40 @@
+/* Example CSS for the layout */
 body {
-    background-color: blanchedalmond;
-}
-
-h1 {
-    color: cornflowerblue;
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  nav {
+    width: 25%;
+    background-color: #333333;
+    color: #ffffff;
+    /* Additional styling for navigation menu */
+  }
+  
+  main {
+    width: 75%;
+    /* Additional styling for content sections */
+  }
+  
+  @media (max-width: 768px) {
+    /* CSS for smaller screens */
+    .container {
+      flex-direction: column;
+    }
+  
+    nav {
+      width: 100%;
+    }
+  
+    main {
+      width: 100%;
+    }
+  }
+  
