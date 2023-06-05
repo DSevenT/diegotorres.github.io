@@ -1,7 +1,12 @@
-/* Example CSS for the layout */
-body {
+/* Reset default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
     padding: 0;
+  }
+  
+  /* General styles */
+  body {
+    font-family: 'Helvetica', Arial, sans-serif;
     background-color: #f8f8f8;
   }
   
@@ -15,26 +20,60 @@ body {
     width: 25%;
     background-color: #333333;
     color: #ffffff;
-    /* Additional styling for navigation menu */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
   }
   
   main {
     width: 75%;
-    /* Additional styling for content sections */
+    padding: 20px;
   }
   
-  @media (max-width: 768px) {
-    /* CSS for smaller screens */
-    .container {
-      flex-direction: column;
-    }
+  /* Styles for each section */
+  /* Modify and customize these styles according to your needs */
   
-    nav {
-      width: 100%;
-    }
+  /* Bio section */
+  .bio {
+    /* Styles for the bio section */
+  }
   
-    main {
-      width: 100%;
-    }
+  /* Projects section */
+  .projects {
+    /* Styles for the projects section */
+  }
+  
+  /* Experience section */
+  .experience {
+    /* Styles for the experience section */
+  }
+  
+  /* Skills section */
+  .skills {
+    /* Styles for the skills section */
+  }
+  
+  /* Contact section */
+  .contact {
+    /* Styles for the contact section */
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
   }
   
