@@ -47,15 +47,6 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   /* Bio section */
   .bio {
       /* Styles for the bio section */
-      .back-button {
-      background-color: #007bff;
-      color: #ffffff;
-      border: none;
-      padding: 10px 20px;
-      margin-bottom: 20px;
-      cursor: pointer;
-    }
-
     
   }
   
@@ -86,4 +77,13 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
     padding: 20px;
     text-align: center;
   }
+
+    .back-button {
+      background-color: #007bff;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
   
