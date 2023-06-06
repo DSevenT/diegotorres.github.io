@@ -58,9 +58,9 @@ img {
   
   /* Bio section */
   .bio {
-      /* Styles for the bio section */
-    
+  text-align: justify;
   }
+
   
   /* Projects section */
   .projects {
