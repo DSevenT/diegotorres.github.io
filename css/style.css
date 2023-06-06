@@ -3,7 +3,19 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
     padding: 0;
   }
-  
+  header {
+  display: flex;
+  align-items: center;
+    }
+
+h1 {
+  margin-right: 20px;
+    }
+
+img {
+  max-width: 100px;
+  border-radius: 50%;
+    }
   /* General styles */
   body {
     font-family: 'Helvetica', Arial, sans-serif;
