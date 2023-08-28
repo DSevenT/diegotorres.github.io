@@ -70,11 +70,19 @@ img {
   .projects {
     /* Styles for the projects section */
   }
+
+  .education {
+      text-align: justify;
+  }
   
   /* Experience section */
   .experience {
     /* Styles for the experience section */
   }
+
+.publications {
+    text-align: justify;
+}
   
   /* Skills section */
   .skills {
