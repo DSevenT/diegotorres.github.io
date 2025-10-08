@@ -1,6 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diego Torres-Garcia</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
 <body>
+  <!-- Hamburger (hidden on desktop, visible on mobile) -->
+  <button class="hamburger">☰</button>
+
   <header>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
     <h1>Diego Torres-Garcia</h1>
     <img src="Photo.jpeg" alt="Diego Torres">
   </header>
@@ -20,21 +30,27 @@
 
     <main>
       <div class="presentation">
-      <h2>Welcome!</h2>
-      <p>My name is <strong>Diego</strong>. I hold a PhD in Control and Systems Science, and I'm currently a postdoctoral researcher at KU Leuven, in the Numerical Analysis and Applied Mathematics (NUMA) research unit.</p>
-      <h3>Main research interest</h3>
-      <ul>
-        <li>Control theory</li>
-        <li>Time-delay systems</li>
-        <li>Delay based controllers</li>
-      </ul>
-      <h3>Useful links</h3>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/diego-torres-garc%C3%ADa/">Linkedin profile</a></li>
-        <li><a href="https://scholar.google.com/citations?user=NXGeqpkAAAAJ&hl=es&authuser=1">Google Scholar profile</a></li>
-        <li><a href="Docs/CVDiegoTorres_October2025.pdf" target="_blank">View my CV (PDF)</a></li>
-        <li> <a href="https://theses.hal.science/tel-05129660/file/146362_TORRES_GARCIA_2025_archivage.pdf">Access my PhD thesis online</a></li>
-      </ul>
+        <h2>Welcome!</h2>
+        <p>
+          My name is <strong>Diego</strong>. I hold a PhD in Control and Systems Science,
+          and I'm currently a postdoctoral researcher at KU Leuven, in the Numerical Analysis
+          and Applied Mathematics (NUMA) research unit.
+        </p>
+
+        <h3>Main research interest</h3>
+        <ul>
+          <li>Control theory</li>
+          <li>Time-delay systems</li>
+          <li>Delay-based controllers</li>
+        </ul>
+
+        <h3>Useful links</h3>
+        <ul class="useful-links">
+          <li><a href="https://www.linkedin.com/in/diego-torres-garc%C3%ADa/">LinkedIn profile</a></li>
+          <li><a href="https://scholar.google.com/citations?user=NXGeqpkAAAAJ&hl=es&authuser=1">Google Scholar profile</a></li>
+          <li><a href="Docs/CVDiegoTorres_October2025.pdf" target="_blank">View my CV (PDF)</a></li>
+          <li><a href="https://theses.hal.science/tel-05129660/file/146362_TORRES_GARCIA_2025_archivage.pdf">Access my PhD thesis online</a></li>
+        </ul>
       </div>
     </main>
   </div>
@@ -42,7 +58,14 @@
   <footer>
     <p>&copy; Diego Torres-García</p>
   </footer>
+
+  <!-- Script should be at the end -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 </body>
-
-
-
+</html>

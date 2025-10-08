@@ -1,113 +1,207 @@
+:root {
+  --primary: #007bff;       /* Bright blue (links, buttons) */
+  --primary-dark: #0056b3;  /* Darker blue (hover states) */
+  --background: #f5f6f8;    /* Light gray background */
+  --text: #333333;          /* Main text color */
+  --sidebar: #1e1e2f;       /* Dark navy sidebar */
+  --card-bg: #ffffff;       /* Content background */
+}
+
 /* Reset default styles */
 body, h1, h2, h3, h4, h5, h6, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
-  header {
+  margin: 0;
+  padding: 0;
+}
+
+/* General styles */
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-    }
+  min-height: 100vh;
+}
+
+/* Navigation Sidebar (fixed) */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 22%;
+  height: 100vh;
+  background-color: var(--sidebar);
+  color: #ffffff;
+  padding-top: 40px;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0 20px;
+}
+
+nav ul li {
+  margin-bottom: 12px;
+}
+
+nav ul li a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+  background-color: #2e2e48;
+  transform: translateX(4px);
+}
+
+/* Hamburger button (for mobile) */
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Main Content Area */
+main {
+  margin-left: 22%;
+  width: 78%;
+  padding: 40px;
+  background: var(--card-bg);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Profile Image */
+img {
+  max-width: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--sidebar);
+}
 
 h1 {
-  margin-right: 20px;
-    }
-
-img {
-  max-width: 100px;
-  border-radius: 50%;
-    }
-  /* General styles */
-  body {
-    font-family: 'Helvetica', Arial, sans-serif;
-    background-color: #f8f8f8;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-  }
-  
-  nav {
-    width: 25%;
-    background-color: #333333;
-    color: #ffffff;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 20px;
-  }
-  
-  nav ul li {
-    margin-bottom: 10px;
-  }
-  
-  nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  
-  main {
-    width: 75%;
-    padding: 20px;
-  }
-  
-  /* Styles for each section */
-  /* Modify and customize these styles according to your needs */
-  
-  /* Bio section */
-  .bio {
-  text-align: justify;
-  }
-
-  .presentation {
-    text-align: justify;
-  }
-
-  
-  /* Projects section */
-  .projects {
-    /* Styles for the projects section */
-  }
-
-  .education {
-      text-align: justify;
-  }
-  
-  /* Experience section */
-  .experience {
-    /* Styles for the experience section */
-  }
-
-.publications {
-    text-align: justify;
+  font-size: 28px;
 }
-  
-  /* Skills section */
-  .skills {
-    /* Styles for the skills section */
-  }
-  
-  /* Contact section */
-  .contact {
-    /* Styles for the contact section */
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: #333333;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
+
+h2 {
+  font-size: 22px;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 6px;
+  margin-bottom: 16px;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+/* Useful Links */
+.useful-links a {
+  display: inline-block;
+  margin: 6px 8px 6px 0;
+  padding: 6px 12px;
+  background: #f1f1f1;
+  border-radius: 6px;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.useful-links a:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* Section text alignment */
+.bio, .presentation, .education, .publications {
+  text-align: justify;
+}
+
+/* Footer */
+footer {
+  background: var(--sidebar);
+  color: #aaa;
+  padding: 15px;
+  font-size: 14px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+footer:hover {
+  color: #fff;
+}
+
+/* Back button (if used) */
+.back-button {
+  background-color: var(--primary);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background-color: var(--primary-dark);
+}
+
+/* ========================= */
+/* Responsive Design (Mobile) */
+/* ========================= */
+@media (max-width: 768px) {
+  nav {
+    transform: translateX(-100%);
   }
 
-    .back-button {
-      background-color: #007bff;
-      color: #ffffff;
-      border: none;
-      padding: 10px 20px;
-      margin-bottom: 20px;
-      cursor: pointer;
-    }
-  
+  nav.active {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  main {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+    margin-top: 70px; /* give space for hamburger */
+  }
+}
