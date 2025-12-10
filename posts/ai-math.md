@@ -26,7 +26,7 @@ These models are ideal for writing essays, poems, or retrieving information alre
 For example, imagine an essay of one hundred thousand words where only one word sounds slightly off or misused. The rest is flawless. We would surely consider it one of the greatest essays ever written.
 
 But what about mathematics?  
-First, mathematics requires a formal language, while these models operate in natural language—the one we use in everyday life. Translating a natural-language question into a formal mathematical statement is the first step in solving a problem. Then one must prove, step by step, what is to be shown. The idea is to reduce the problem to propositional logic—statements like “$P$ implies $Q$” or “if \(P\), then $Q$.” Then this is divided into smaller steps: $P_1 \Rightarrow P_2$, $P_2 \Rightarrow P_3$, and so on.
+First, mathematics requires a formal language, while these models operate in natural language—the one we use in everyday life. Translating a natural-language question into a formal mathematical statement is the first step in solving a problem. Then one must prove, step by step, what is to be shown. The idea is to reduce the problem to propositional logic—statements like “$P$ implies $Q$” or “if $P$, then $Q$.” Then this is divided into smaller steps: $P_1 \Rightarrow P_2$, $P_2 \Rightarrow P_3$, and so on.
 
 What’s the issue?  
 As we said, in mathematics there are no middle grounds: only true or false, correct or incorrect. This means that an error in any intermediate step leads to a completely wrong result. And although the probability of error in each step is small, if the problem is long and requires many steps, the probabilities accumulate—making human verification necessary.
