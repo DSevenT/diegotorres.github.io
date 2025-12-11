@@ -14,7 +14,7 @@ Once an axiomatic system is established—that is, the set of statements accepte
 
 And although Gödel showed that sufficiently complex systems contain statements that can neither be proven true nor false, something interesting about this notion of truth is that even the slightest error, contradiction, or incomplete argument is enough to turn an absolute truth into complete falsehood. In mathematics there is no such thing as “a bit more true” or “slightly less false”: only truth or falsehood. And while this might sound exaggerated or restrictive, this concept—unique to mathematics—is extremely powerful.
 
-This is where artificial intelligence comes in. Large Language Models (LLMs), such as ChatGPT, Grok, Gemini, or LLaMA, have grown at unimaginable speed. They have gone from giving nonsensical answers—though beautifully written—to solving almost any simple task correctly and efficiently within seconds.
+This is where artificial intelligence comes in. Large Langmduage Models (LLMs), such as ChatGPT, Grok, Gemini, or LLaMA, have grown at unimaginable speed. They have gone from giving nonsensical answers—though beautifully written—to solving almost any simple task correctly and efficiently within seconds.
 
 But how do these models actually work?  
 The architecture used by most of them is known as a *transformer* (hence the “T” in ChatGPT). Roughly speaking, the model receives a set of tokens (the words or text fragments we input when asking a question, requesting a reference, etc.). Using massive amounts of training data, the model calculates the most probable next token. Then it adds it and repeats the process until it generates a token indicating the end of the response—all done probabilistically.
@@ -26,19 +26,21 @@ These models are ideal for writing essays, poems, or retrieving information alre
 For example, imagine an essay of one hundred thousand words where only one word sounds slightly off or misused. The rest is flawless. We would surely consider it one of the greatest essays ever written.
 
 But what about mathematics?  
-First, mathematics requires a formal language, while these models operate in natural language—the one we use in everyday life. Translating a natural-language question into a formal mathematical statement is the first step in solving a problem. Then one must prove, step by step, what is to be shown. The idea is to reduce the problem to propositional logic—statements like “$P$ implies $Q$” or “if $P$, then $Q$.” Then this is divided into smaller steps: $P_1 \Rightarrow P_2$, $P_2 \Rightarrow P_3$, and so on.
+First, mathematics requires a formal language, while these models operate in natural language—the one we use in everyday life. Translating a natural-language question into a formal mathematical statement is the first step in solving a problem. Then one must prove, step by step, what is to be shown. The idea is to reduce the problem to propositional logic—statements like “$ P $ implies $ Q $” or “if $ P $, then $ Q $.” Then this is divided into smaller steps: $ P_1 \Rightarrow P_2 $, $ P_2 \Rightarrow P_3 $, and so on.
 
 What’s the issue?  
 As we said, in mathematics there are no middle grounds: only true or false, correct or incorrect. This means that an error in any intermediate step leads to a completely wrong result. And although the probability of error in each step is small, if the problem is long and requires many steps, the probabilities accumulate—making human verification necessary.
 
 Let’s illustrate this.  
-Take two real numbers $a$ and $b$ such that $a = b$. Then $ab = a^2$, which means $ab - b^2 = a^2 - b^2$. Rewriting, we get:
+Take two real numbers $a$ and $b$ such that $ a = b $. Then $ ab = a^2 $, which means $ ab - b^2 = a^2 - b^2 $. Rewriting, we get:
 
 $$
+
 b(a - b) = (a + b)(a - b).
+
 $$
 
-Finally, if we divide both sides by $a - b$, we conclude that $b = a + b = 2b$, and therefore $1 = 2$.  
+Finally, if we divide both sides by $ a - b $, we conclude that $ b = a + b = 2b $, and therefore $ 1 = 2 $.  
 The issue is that dividing by $a-b$ is equivalent to dividing by zero since $a = b$. Even though the rest of the steps were correct, that single error led to complete nonsense.
 
 Of course, humans also make such mistakes. We’ve all read incorrect results in books, articles, or elsewhere. And the way these errors are caught is through collaboration and peer review.
