@@ -1,3 +1,8 @@
+---
+layout: default
+title: The Role of AI in Mathematical Research
+---
+
 # The Role of AI in Mathematical Research  
 **Juan Diego Torres García**  
 _November 2025_
